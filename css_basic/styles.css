@@ -4,6 +4,7 @@ body {
   flex-direction: column;
   height: 100vh; 
   margin: 0; 
+  font-family: Arial, sans-serif;
 }
 
 main {
@@ -14,18 +15,72 @@ main {
 article {
   flex: 2;
   overflow-y: auto; 
-  padding: 1rem; 
+  background: #f9f9f9;
+  padding: 15px; 
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
 }
 
 aside {
   flex: 1;
   overflow-y: auto;
-  padding: 1rem;
-  background-color: #f9f9f9; 
+  background: #e9f0ff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin: 10px;
 }
 
-header, footer {
-  padding: 1rem;
-  background-color: #eee;
+header {
+  background-color: #222;
+  color: white;
+  padding: 20px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+header li {
+  margin-right: 20px;
+
+  header a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+
+  header a:hover {
+  text-decoration: underline;
+}
+
+header a:hover {
+  text-decoration: underline;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-right: 20px;
+}
+
+footer {
+  background-color: #333;
+  color: #ccc;
   text-align: center;
+  padding: 10px;
+}
+
+article h2 {
+  color: #0055aa;
+  border-bottom: 2px solid #0055aa;
+  padding-bottom: 5px;
+}
+
+article p {
+  line-height: 1.6;
+  font-size: 1.1rem;
 }
