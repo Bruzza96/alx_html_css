@@ -401,6 +401,68 @@ section:nth-of-type(2) p:last-of-type {
   color: #555;
   line-height: 1.6;
 }
+/* ===== FOOTER ===== */
+.footer {
+  background-color: #111; /* or whatever dark color is in Figma */
+  color: #fff;
+  padding: 60px 0 40px;
+  text-align: center;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+}
+
+.footer-logo {
+  width: 140px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-links a img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer-links a img:hover {
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.footer-text {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-top: 20px;
+  line-height: 1.5;
+}
+
+/* Responsive Footer */
+@media (max-width: 600px) {
+  .footer-links {
+    gap: 15px;
+  }
+
+  .footer-text {
+    font-size: 0.85rem;
+  }
+}
 
 
 
