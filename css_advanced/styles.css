@@ -41,6 +41,21 @@ section {
 }
 
 /* ===== HEADER ===== */
+.hero {
+  background-image: url('images/header-bg.jpg'); /* path to your actual image */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* makes it full screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  padding: 0 20px;
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -177,57 +192,7 @@ section:nth-of-type(2) p:last-of-type {
   font-size: 16px;
   color: var(--light-text);
 }
-/* ===== VIDEOS SECTION ===== */
-.videos {
-  background-color: #fff;
-  padding: 100px 60px;
-  text-align: center;
-}
 
-.videos h2 {
-  font-size: 32px;
-  margin-bottom: 60px;
-  color: var(--text-color);
-}
-
-.videos-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  justify-content: center;
-}
-
-.video-card {
-  background-color: var(--bg-light);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.video-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-}
-
-.video-card img:first-of-type {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  object-fit: cover;
-}
-
-.video-card h3 {
-  font-size: 20px;
-  margin: 10px 0;
-  color: var(--text-color);
-}
-
-.video-card p {
-  font-size: 16px;
-  color: var(--light-text);
-  margin-bottom: 20px;
-}
 
 /* ===== AUTHOR BLOCK ===== */
 .author {
@@ -265,71 +230,7 @@ section:nth-of-type(2) p:last-of-type {
   font-weight: 600;
   color: var(--primary-color);
 }
-/* ===== MEMBERSHIP SECTION ===== */
-.membership {
-  background-color: var(--bg-light);
-  padding: 100px 60px;
-  text-align: center;
-}
 
-.membership h2 {
-  font-size: 32px;
-  color: var(--text-color);
-  margin-bottom: 60px;
-}
-
-.membership-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 40px;
-  justify-content: center;
-}
-
-.membership-card {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-  padding: 30px 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.membership-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-}
-
-.membership-card img {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.membership-card h3 {
-  font-size: 22px;
-  color: var(--text-color);
-  margin-bottom: 15px;
-}
-
-.membership-card p {
-  font-size: 16px;
-  color: var(--light-text);
-  margin-bottom: 25px;
-}
-
-.membership-card button {
-  background-color: var(--primary-color);
-  color: #fff;
-  border: none;
-  padding: 12px 25px;
-  border-radius: 6px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.membership-card button:hover {
-  background-color: #e14d52;
-}
 
 /* Responsive */
 @media (max-width: 1024px) {
