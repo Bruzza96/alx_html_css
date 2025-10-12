@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #333;
+  max-width: 1000px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  color: #FF6565;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* Responsive rule */
+@media screen and (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .hero {
+    text-align: center;
+    padding: 20px;
+  }
+}
+
