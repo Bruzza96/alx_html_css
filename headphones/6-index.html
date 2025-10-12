@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Headphones — Our results (CSS pentagons)</title>
+
+  <!-- Holberton icon font (if you used it earlier) -->
+  <link rel="stylesheet" href="holberton_school-icon/stylesheet.css">
+
+  <!-- main stylesheet for this task -->
+  <link rel="stylesheet" href="6-styles.css">
+</head>
+<body class="works_on_smartphone">
+
+  <!-- Header / Nav (kept minimal for this task) -->
+  <header class="header">
+    <nav class="nav">
+      <img src="images/logo_headphones.png" alt="Headphones logo" class="logo">
+      <ul class="nav-links">
+        <li><a href="#what-we-do">What we do</a></li>
+        <li><a href="#our-results">Our results</a></li>
+        <li><a href="#contact">Contact us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero (kept simple for clarity) -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Sound that moves you</h1>
+      <p>High fidelity, comfort and style — built for your ears.</p>
+      <button>Discover</button>
+    </div>
+  </section>
+
+  <!-- What we do (reused component) -->
+  <section id="what-we-do" class="what-we-do">
+    <h2>What we do…</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. We design audio experiences.</p>
+
+    <div class="icons-container">
+      <div class="icon-box">
+        <span class="holberton_school-icon-ic_sound"></span>
+        <h3>Audio design</h3>
+        <p>Studio-grade mixing and mastering.</p>
+      </div>
+      <div class="icon-box">
+        <span class="holberton_school-icon-ic_video"></span>
+        <h3>Media</h3>
+        <p>Audio for video and VR.</p>
+      </div>
+      <div class="icon-box">
+        <span class="holberton_school-icon-ic_music"></span>
+        <h3>Production</h3>
+        <p>Original compositions and soundtracks.</p>
+      </div>
+      <div class="icon-box">
+        <span class="holberton_school-icon-ic_hearing"></span>
+        <h3>Consulting</h3>
+        <p>Product and acoustic consultation.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUR RESULTS - this section uses CSS pentagons as decorative backgrounds -->
+  <section id="our-results" class="our-results">
+    <h2>Our results speak for themselves</h2>
+    <p class="lead">Numbers that show how we improved listening experiences for our clients.</p>
+
+    <div class="results-container">
+      <div class="result-item">
+        <!-- css-drawn pentagon behind the stat -->
+        <div class="pentagon pentagon-lg pentagon-1" aria-hidden="true"></div>
+
+        <div class="circle">
+          <h3>+2%</h3>
+          <p>Retention</p>
+        </div>
+      </div>
+
+      <div class="result-item">
+        <div class="pentagon pentagon-md pentagon-2" aria-hidden="true"></div>
+
+        <div class="circle">
+          <h3>+50%</h3>
+          <p>Engagement</p>
+        </div>
+      </div>
+
+      <div class="result-item">
+        <div class="pentagon pentagon-lg pentagon-3" aria-hidden="true"></div>
+
+        <div class="circle">
+          <h3>+100%</h3>
+          <p>Conversion</p>
+        </div>
+      </div>
+
+      <div class="result-item">
+        <div class="pentagon pentagon-sm pentagon-4" aria-hidden="true"></div>
+
+        <div class="circle">
+          <h3>+1k%</h3>
+          <p>Reach</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact">
+    <h2>Contact us</h2>
+    <p>Want to get in touch? Fill out the form below.</p>
+    <form class="contact-form" action="#" method="post">
+      <input type="text" name="name" placeholder="Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo_headphones.png" alt="Headphones logo">
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook"><i class="holberton_school-icon-ic_facebook"></i></a>
+        <a href="#" aria-label="Twitter"><i class="holberton_school-icon-ic_twitter"></i></a>
+        <a href="#" aria-label="Instagram"><i class="holberton_school-icon-ic_instagram"></i></a>
+      </div>
+    </div>
+    <p class="footer-copy">© Headphones 2025</p>
+  </footer>
+
+</body>
+</html>
