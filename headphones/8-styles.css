@@ -1,0 +1,286 @@
+/* === GLOBAL STYLES === */
+body {
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* === NAVIGATION BAR === */
+header {
+  background-color: #071629;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #FF6565;
+}
+
+/* === HERO SECTION === */
+.hero {
+  background: url('images/headphones_hero_1.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 150px 20px;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #FF6565;
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+.hero button:hover {
+  opacity: 0.9;
+}
+
+/* === WHAT WE DO === */
+.what-we-do {
+  text-align: center;
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.what-we-do .items {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.item {
+  width: 250px;
+}
+
+.item i {
+  font-size: 40px;
+  color: #FF6565;
+}
+
+.item h3 {
+  margin: 10px 0;
+}
+
+/* Image gallery */
+.what-we-do-gallery {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 30px;
+}
+
+.what-we-do-gallery img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.what-we-do-gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* === OUR RESULTS === */
+.results {
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.results .items {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* === CONTACT === */
+.contact {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  margin: 0 auto;
+  gap: 15px;
+}
+
+.contact input,
+.contact textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.contact button {
+  background-color: #FF6565;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* === FOOTER === */
+.footer {
+  background-color: #071629;
+  color: white;
+  text-align: center;
+  padding: 50px 20px 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto 30px;
+  flex-wrap: wrap;
+}
+
+.footer-logo img {
+  height: 40px;
+}
+
+.footer-socials {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-socials a {
+  color: white;
+  font-size: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.footer-socials a:hover {
+  color: #FF6565;
+  transform: scale(1.2);
+}
+
+.footer-copy {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* === HAMBURGER MENU === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  width: 25px;
+  height: 18px;
+  justify-content: space-between;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: white;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+/* Toggle effect */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* === MOBILE VIEW === */
+@media screen and (max-width: 480px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #071629;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .nav-links.show {
+    display: flex;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .what-we-do-gallery img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
